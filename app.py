@@ -30,7 +30,7 @@ if prompt:
         st.write(prompt)
 
     # Llamada a Gemini
-    modelo = genai.GenerativeModel("gemini-1.5-flash")
+    modelo = genai.GenerativeModel("gemini-2.0-flash")
     response = modelo.generate_content(prompt)
     answer = response.text
 
